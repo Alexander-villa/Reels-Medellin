@@ -19,16 +19,29 @@ let filterOptions = {
 
 paginate.init('.myTable',options,filterOptions);
 
-//LIKE
 
-const likeBtns = document.querySelectorAll(".post-like");
+    // Obtener todos los elementos de video
+    const videos = document.querySelectorAll('.video-item');
 
-likeBtns.forEach((likeBtn) => {
-  likeBtn.addEventListener("click", () => {
-    if (likeBtn.classList.contains("active")) {
-      likeBtn.classList.remove("active");
-    } else {
-      likeBtn.classList.add("active");
-    }
-  });
-});
+    // Agregar un controlador de eventos a cada video
+    videos.forEach(video => {
+      video.addEventListener('play', function() {
+        // Pausar todos los demás videos cuando se reproduce uno
+        videos.forEach(otherVideo => {
+          if (otherVideo !== video) {
+            otherVideo.pause();
+          }
+        });
+
+        // Entrar en modo de pantalla completa al reproducir
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+          video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) {
+          video.webkitRequestFullscreen();
+        }
+      });
+    });
+
+    
