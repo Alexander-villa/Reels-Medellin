@@ -1,3 +1,32 @@
+document.addEventListener("DOMContentLoaded", function() {
+  var videos = document.querySelectorAll("video");
+
+  videos.forEach(function(video) {
+      video.addEventListener("play", function() {
+          pauseOtherVideos(video);
+      });
+
+      video.addEventListener("click", function() {
+          if (video.requestFullscreen) {
+              video.requestFullscreen();
+          } else if (video.mozRequestFullScreen) {
+              video.mozRequestFullScreen();
+          } else if (video.webkitRequestFullscreen) {
+              video.webkitRequestFullscreen();
+          }
+      });
+  });
+
+  function pauseOtherVideos(currentVideo) {
+      videos.forEach(function(video) {
+          if (video !== currentVideo) {
+              video.pause();
+          }
+      });
+  }
+});
+
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -8,7 +37,7 @@ function myFunction() {
   }
 
   let options = {
-    numberPerPage:10, //Cantidad de datos por pagina
+    numberPerPage:2, //Cantidad de datos por pagina
     goBar:true, //Barra donde puedes digitar el numero de la pagina al que quiere ir
     pageCounter:true, //Contador de paginas, en cual estas, de cuantas paginas
 };
@@ -18,30 +47,3 @@ let filterOptions = {
 };
 
 paginate.init('.myTable',options,filterOptions);
-
-
-    // Obtener todos los elementos de video
-    const videos = document.querySelectorAll('.video-item');
-
-    // Agregar un controlador de eventos a cada video
-    videos.forEach(video => {
-      video.addEventListener('play', function() {
-        // Pausar todos los demás videos cuando se reproduce uno
-        videos.forEach(otherVideo => {
-          if (otherVideo !== video) {
-            otherVideo.pause();
-          }
-        });
-
-        // Entrar en modo de pantalla completa al reproducir
-        if (video.requestFullscreen) {
-          video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-          video.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) {
-          video.webkitRequestFullscreen();
-        }
-      });
-    });
-
-    
