@@ -171,11 +171,18 @@ a .btn:hover {
   background-color: RoyalBlue;
 }
 
+/*Paginacion*/
+
 .pagination{
   text-align: center;
 }
 .number_pag{
   display: inline-block;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  width: 450px;
+  margin: auto;
 }
 .number_pag a{
   background-color: #210225;
@@ -186,7 +193,6 @@ a .btn:hover {
   transition: background-color .3s;
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin: 0 4px;
 }
 .number_pag a.active {
   background-color: #221a38;
@@ -195,4 +201,39 @@ a .btn:hover {
 }
 .number_pag a:hover:not(.active) {
   background-color: #ddd;
+}
+
+
+/*DESLIZADOR*/
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+margin: 0px 20px;
+}
+
+.slick-slide img {
+width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: black;
+}
+
+
+.slick-slide {
+transition: all ease-in-out .3s;
+opacity: .2;
+}
+
+.slick-active {
+opacity: .5;
+}
+
+.slick-current {
+opacity: 1;
 }
