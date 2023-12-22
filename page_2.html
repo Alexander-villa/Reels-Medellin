@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/jquery.fancybox.css">
         <link rel="stylesheet" href="./css/style.css">
+
+        <link rel="stylesheet" href="./css/swiper-bundle.css">
+        <link rel="stylesheet" href="./css/swiper.css">
+
+        <link rel="stylesheet" href="./css/slide.css">
     
         <title>Reels - Medellin</title>
     
@@ -168,15 +173,34 @@
            </article>
 
         </section>
-
-        <section class="pagination">
+        
+        <!--<section class="pagination">
             <article class="number_pag">
-                <!--<a href="#">&laquo;</a>-->
+                <a href="content.html">&laquo;</a>
                 <a href="content.html">1</a>
                 <a href="page_2.html" class="active">2</a>
                 <a href="page_3.html">3</a>
-                <!--<a href="#">&raquo;</a>-->
+                <a href="page_3.html">&raquo;</a>
             </article>
+        </section>-->
+        
+        <section id="slider-container">
+            <article id="slider">
+                <div class="casilla"><a href="content.html">1</a></div>
+                <div class="casilla active"><a href="page_2.html">2</a></div>
+                <div class="casilla"><a href="page_3.html">3</a></div>
+                <div class="casilla">4</div>
+                <div class="casilla">5</div>
+                <div class="casilla">6</div>
+                <div class="casilla">7</div>
+                <div class="casilla">8</div>
+                <div class="casilla">9</div>
+                <div class="casilla">10</div>
+            </article>
+        </section>
+        <section class="butt">
+            <button class="left"><a href="content.html">Prev.</a></button>
+            <button class="right"><a href="page_3.html">Next.</a></button>
         </section>
 
         <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>-->
@@ -185,5 +209,9 @@
         <script src="./js/jquery.fancybox.min.js"></script>
         <script  src="./js/script.js"></script>
         <script src="./js/main.js"></script>
+
+        <script src="./js/swiper-element.js"></script>
+
+        <script src="./js/slide.js"></script>
     </body>
 </html>

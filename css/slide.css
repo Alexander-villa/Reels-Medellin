@@ -1,0 +1,93 @@
+#slider-container {
+    width: 30%; /* Cambia el ancho según tus necesidades */
+    margin: 0 auto; /* Centra el slider */
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+#slider {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease;
+}
+
+.casilla {
+    background-color: #210225;
+    padding: 8px 16px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    z-index: 1;
+}
+.casilla a{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+.casilla.active {
+    background-color: #221a38;
+    color: #f0f8ff;
+    border-radius: 10px;
+  }
+
+.butt{
+    position: relative;
+    top: -34px;
+}
+.butt a{
+    text-decoration: none;
+    color: #210225;
+}
+
+.left{
+    display: block;
+    position: relative;
+    float: left;
+    left: 28%;
+    padding: 8px 16px;
+}
+
+.right{
+    display: block;
+    position: relative;
+    float: right;
+    right: 28%;
+    padding: 8px 16px;
+}
+
+@media screen and (max-width: 1024px){
+    .left{
+        left: 22%;
+    }
+    .right{
+        right: 22%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .left{
+        left: 16%;
+    }
+    .right{
+        right: 16%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #slider-container{
+        width: 50%;
+    }
+    .butt{
+    top: -24px;
+    }
+    .left{
+        padding: 0;
+        left: 6%;
+    }
+    .right{
+        padding: 0;
+        right: 6%;
+    }
+}

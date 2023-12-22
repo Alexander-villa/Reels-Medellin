@@ -9,7 +9,13 @@
         <link rel="stylesheet" href="./css/jquery.fancybox.css">
         <link rel="stylesheet" href="./css/style.css">
 
+        <link rel="stylesheet" href="./css/swiper-bundle.css">
+        <link rel="stylesheet" href="./css/swiper.css">
+
+        <link rel="stylesheet" href="./css/slide.css">
+
         <title>Reels - Medellin</title>
+
     </head>
     <body class="body_1">
         <header>
@@ -168,25 +174,48 @@
                     </a>
                 </div>
             </article>
-            
         </section>
         
-        <section class="pagination slider" id="slider">
-            <article class="number_pag slide" id="slide">
-                <!--<a href="#" class="carousel-item">&laquo;</a>-->
-                <a href="content.html" class="active carousel-item">1</a>
-                <a href="page_2.html" class="carousel-item">2</a>
-                <a href="page_3.html" class="carousel-item">3</a>
-                <!--<a href="#" class="carousel-item">&raquo;</a>-->
+        
+        <!--<section class="pagination">
+            <article class="number_pag">
+                <a href="#">&laquo;</a>
+                <a href="content.html" class="active">1</a>
+                <a href="page_2.html">2</a>
+                <a href="page_3.html">3</a>
+                <a href="page_2.html">&raquo;</a>
+            </article>
+        </section>-->
+    
+
+        <section id="slider-container">
+            <article id="slider">
+                <div class="casilla active"><a href="content.html">1</a></div>
+                <div class="casilla"><a href="page_2.html">2</a></div>
+                <div class="casilla"><a href="page_3.html">3</a></div>
+                <div class="casilla">4</div>
+                <div class="casilla">5</div>
+                <div class="casilla">6</div>
+                <div class="casilla">7</div>
+                <div class="casilla">8</div>
+                <div class="casilla">9</div>
+                <div class="casilla">10</div>
             </article>
         </section>
+        <section class="butt">
+            <button class="left">Prev.</button>
+            <button class="right"><a href="page_2.html">Next.</a></button>
+        </section>
 
-    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>-->
-    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>-->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
-    <script  src="./js/script.js"></script>
-    <script src="./js/main.js"></script>
-        
+        <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>-->
+        <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>-->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery.fancybox.min.js"></script>
+        <script  src="./js/script.js"></script>
+        <script src="./js/main.js"></script>
+
+        <script src="./js/swiper-element.js"></script>
+
+        <script src="./js/slide.js"></script>
     </body>
 </html>
