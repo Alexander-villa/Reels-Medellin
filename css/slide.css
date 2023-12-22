@@ -46,7 +46,7 @@
     position: relative;
     float: left;
     left: 28%;
-    padding: 8px 16px;
+    padding: 8px 6px;
 }
 
 .right{
@@ -54,7 +54,7 @@
     position: relative;
     float: right;
     right: 28%;
-    padding: 8px 16px;
+    padding: 8px 6px;
 }
 
 @media screen and (max-width: 1024px){
