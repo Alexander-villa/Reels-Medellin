@@ -212,3 +212,91 @@ a .btn:hover {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+/*ABOUT*/
+.about{
+  color: #ffffff;
+  background-color: #4948488a;
+  border-radius: 10px;
+  padding: 1px;
+  letter-spacing: 1px;
+}
+.about h2, p{
+  margin: 8px 16px;
+}
+.about_2{
+  text-align: center;
+  font-size: 28px;
+}
+.end{
+  text-align: center;
+  font-size: 18px;
+}
+
+/*CONTACT*/
+.contact_form{
+  color: #ffffff;
+  border-radius: 10px;  
+  padding-top: 10px;
+  background-color: #4948488a; 
+  padding: 30px;
+  letter-spacing: 1px;
+}
+
+input{
+  width: 100%;
+  height: 30px; 
+  border-radius: 10px;  
+  border-style: solid; 
+  border-width: 1px; 
+  margin-top: 10px;  
+  margin-bottom: 10px;
+}
+
+textarea{
+  width: 100%;
+  height: 150px; 
+  border-radius: 10px;  
+  border-style: solid; 
+  border-width: 1px; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 10px; 
+  padding-top: 15px;
+}
+
+label{
+  display: block; 
+  float: center;
+}
+
+button{
+  margin-bottom: 20px; 
+  background-color: #ab4493; 
+  border-style: solid; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button p{
+  color: #fff;
+}
+
+::-webkit-input-placeholder{
+  color: #1a1818;
+}
+
+::-webkit-textarea-placeholder{
+  color: #a8a8a8;
+}
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}

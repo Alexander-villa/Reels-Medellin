@@ -19,6 +19,47 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </nav>
     </header>
+
+    <div class="contact_form">
+        <section class="formulario">
+          <h1>Contact.</h1>
+          <form action="https://formsubmit.co/alexander.villa@hotmail.es" method="post">
+            <article>
+              <label for="nombre" class="colocar_nombre">Nombre.
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio">
+            </article>
+    
+            <article>
+              <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="email" name="introducir_email" id="email" required="obligatorio">
+            </article>
+    
+            <article>
+              <label for="asunto" class="colocar_asunto">Asunto
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="text" name="introducir_asunto" id="assunto" required="obligatorio">
+            </article>
+    
+            <article>
+              <label for="mensaje" class="colocar_mensaje" name="message">Mensaje
+                <span class="obligatorio">*</span>
+              </label>                     
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+            </article>  
+    
+            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+            <article class="aviso">
+                <span class="obligatorio"> * </span>Los campos son obligatorios.
+            </article>
+          </form>
+        </section>
+      </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
