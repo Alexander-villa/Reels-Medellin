@@ -12,10 +12,9 @@
     <body class="body_1">
         <header>
             <nav class="topnav" id="myTopnav">
-                <a href="content.html" class="active">Content.</a>
-                <a href="index.html">Start.</a>
+                <a href="index.html" class="active">Init.</a>
                 <a href="news.html">News.</a>
-                <a href="#contact">Contact.</a>
+                <a href="contact.html">Contact.</a>
                 <a href="about.html">About.</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </nav>
@@ -25,7 +24,10 @@
             <!--1-->
             <article class="video_cont">
                 <a class="video-item" href="./video/chocheshow_video_1700095356849.mp4" data-fancybox="gallery">
-                    <video src="./video/chocheshow_video_1700095356849.mp4"></video>
+                    <video id="video1" onplay="hidePlayOverlay('video1')" onpause="showPlayOverlay('video1')">
+                        <source src="./video/chocheshow_video_1700095356849.mp4" type="video/mp4">
+                    </video>
+                    <img id="play-overlay1" class="play-overlay" src="./images/play-button1.png" alt="Reproducir" onclick="playVideo('video1')">
                 </a>
                 <div class="post_body">
                     <h2>Centro de Medellin - Nocturno.</h2>
@@ -166,6 +168,210 @@
                     </a>
                 </div>
             </article>
+            <!--13-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/jazmincanas.oficial_video_1700096632581.mp4" data-fancybox="gallery">
+                    <video src="./video/jazmincanas.oficial_video_1700096632581.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>Sobre el Metro Cable.</h2>
+                    <a href="../Reels-Medellin/video/jazmincanas.oficial_video_1700096632581.mp4" download="jazmincanas.oficial_video_1700096632581.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--14-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699665305384.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699665305384.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>Ferrari rodando en Medellin.</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699665305384.mp4" download="medellinenvideos_video_1699665305384.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--15-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699665473764.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699665473764.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>Algunos emblemas de Medellin.</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699665473764.mp4" download="medellinenvideos_video_1699665473764.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--16-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699665577132.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699665577132.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>El tranvía.</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699665577132.mp4" download="medellinenvideos_video_1699665577132.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--17-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699665720782.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699665720782.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>Es Medellin.</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699665720782.mp4" download="medellinenvideos_video_1699665720782.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--18-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699665785307.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699665785307.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>El tranvía bajo la lluvia.</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699665785307.mp4" download="medellinenvideos_video_1699665785307.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--19-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699665954719.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699665954719.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>Ok, pero Medellin...</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699665954719.mp4" download="medellinenvideos_video_1699665954719.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--20-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699666024877.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699666024877.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>6:00 pm.</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699666024877.mp4" download="medellinenvideos_video_1699666024877.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--21-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1699666089041.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1699666089041.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>Como no maravillarse?</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1699666089041.mp4" download="medellinenvideos_video_1699666089041.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--22-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/medellinenvideos_video_1700237749453.mp4" data-fancybox="gallery">
+                    <video src="./video/medellinenvideos_video_1700237749453.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>Ven unos días a Medellin.</h2>
+                    <a href="../Reels-Medellin/video/medellinenvideos_video_1700237749453.mp4" download="medellinenvideos_video_1700237749453.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--23-->
+            <article class="video_cont">
+                <a class="video-item" href="./video/teamany_video_1700095614109.mp4" data-fancybox="gallery">
+                    <video src="./video/teamany_video_1700095614109.mp4"></video>
+                </a>
+                <div class="post_body">
+                    <h2>RBD.</h2>
+                    <a href="../Reels-Medellin/video/teamany_video_1700095614109.mp4" download="teamany_video_1700095614109.mp4">
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+                </div>
+            </article>
+            <!--24-->
+           <article class="video_cont">
+               <a class="video-item" href="./video/temp_regrann_1700617031117.mp4" data-fancybox="gallery">
+                <video src="./video/temp_regrann_1700617031117.mp4"></video>
+               </a>
+               <div class="post_body">
+                   <h2>Diablos señorita!</h2>
+                   <a href="../Reels-Medellin/video/temp_regrann_1700617031117.mp4" download="temp_regrann_1700617031117.mp4">
+                       <button class="btn"><i class="fa fa-download"></i> Download</button>
+                   </a>
+               </div>
+           </article>
+                       <!--25-->            
+                       <article class="video_cont">
+                        <a class="video-item" href="./video/medellinenvideos_video_1700616917907.mp4" data-fancybox="gallery">
+                            <video src="./video/medellinenvideos_video_1700616917907.mp4"></video>
+                        </a>
+                        <div class="post_body">
+                            <h2>Disfruta de las luces decembrinas.</h2>
+                            <a href="../Reels-Medellin/video/medellinenvideos_video_1700616917907.mp4" download="medellinenvideos_video_1700616917907.mp4">
+                                <button class="btn"><i class="fa fa-download"></i> Download</button>
+                            </a>
+                        </div>
+                    </article>
+                    <!--26-->
+                    <article class="video_cont">
+                        <a class="video-item" href="./video/medellinismo_video_1700096355639.mp4" data-fancybox="gallery">
+                            <video src="./video/medellinismo_video_1700096355639.mp4"></video>
+                        </a>
+                        <div class="post_body">
+                            <h2>La Medellin futuro 2050.</h2>
+                            <a href="../Reels-Medellin/video/medellinismo_video_1700096355639.mp4" download="medellinismo_video_1700096355639.mp4">
+                                <button class="btn"><i class="fa fa-download"></i> Download</button>
+                            </a>
+                        </div>
+                    </article>
+                    <!--27-->
+                    <article class="video_cont">
+                        <a class="video-item" href="./video/medellinismo_video_1700096878226.mp4" data-fancybox="gallery">
+                            <video src="./video/medellinismo_video_1700096878226.mp4"></video>
+                        </a>
+                        <div class="post_body">
+                            <h2>Desde los Barrios en Drone.</h2>
+                            <a href="../Reels-Medellin/video/medellinismo_video_1700096878226.mp4" download="medellinismo_video_1700096878226.mp4">
+                                <button class="btn"><i class="fa fa-download"></i> Download</button>
+                            </a>
+                        </div>
+                    </article>
+                    <!--28-->
+                    <article class="video_cont">
+                        <a class="video-item" href="./video/medellinismo_video_1700237634553.mp4" data-fancybox="gallery">
+                            <video src="./video/medellinismo_video_1700237634553.mp4"></video>
+                        </a>
+                        <div class="post_body">
+                            <h2>Los turistas primíparos.</h2>
+                            <a href="../Reels-Medellin/video/medellinismo_video_1700237634553.mp4" download="medellinismo_video_1700237634553.mp4">
+                                <button class="btn"><i class="fa fa-download"></i> Download</button>
+                            </a>
+                        </div>
+                    </article>
+                    <!--29-->
+                    <article class="video_cont">
+                        <a class="video-item" href="./video/quinterocalle_video_1700618646781.mp4" data-fancybox="gallery">
+                            <video src="./video/quinterocalle_video_1700618646781.mp4"></video>
+                        </a>
+                        <div class="post_body">
+                            <h2>Cuando se acerca la noche.</h2>
+                            <a href="../Reels-Medellin/video/quinterocalle_video_1700618646781.mp4" download="quinterocalle_video_1700618646781.mp4">
+                                <button class="btn"><i class="fa fa-download"></i> Download</button>
+                            </a>
+                        </div>
+                    </article>
         </section>
         
         <section class="pagination">
@@ -182,6 +388,8 @@
         <script src="./js/jquery.fancybox.js"></script>
         <script  src="./js/script.js"></script>
         <script src="./js/main.js"></script>
+
+        <script src="./js/controls.js"></script>
 
     </body>
 </html>

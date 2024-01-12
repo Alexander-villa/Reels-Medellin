@@ -164,20 +164,9 @@ body.compensate-for-scrollbar {
     padding: 6px;
 }
 
-.fancybox-content {
-    background: #fff;
-    display: inline-block;
-    margin: 0;
-    max-width: 100%;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 44px;
-    position: relative;
-    text-align: left;
-    vertical-align: middle;
-}
 
-.fancybox-slide--image .fancybox-content {
+
+.fancybox-slide--image {
     animation-timing-function: cubic-bezier(.5, 0, .14, 1);
     background: transparent;
     background-repeat: no-repeat;
@@ -198,21 +187,21 @@ body.compensate-for-scrollbar {
     z-index: 99995;
 }
 
-.fancybox-can-zoomOut .fancybox-content {
+.fancybox-can-zoomOut  {
     cursor: zoom-out;
 }
 
-.fancybox-can-zoomIn .fancybox-content {
+.fancybox-can-zoomIn {
     cursor: zoom-in;
 }
 
-.fancybox-can-swipe .fancybox-content,
-.fancybox-can-pan .fancybox-content {
+.fancybox-can-swipe ,
+.fancybox-can-pan  {
     cursor: -webkit-grab;
     cursor: grab;
 }
 
-.fancybox-is-grabbing .fancybox-content {
+.fancybox-is-grabbing  {
     cursor: -webkit-grabbing;
     cursor: grabbing;
 }
@@ -244,25 +233,25 @@ body.compensate-for-scrollbar {
     z-index: 1;
 }
 
-.fancybox-slide--video .fancybox-content,
-.fancybox-slide--map .fancybox-content,
-.fancybox-slide--pdf .fancybox-content,
-.fancybox-slide--iframe .fancybox-content {
+.fancybox-slide--video ,
+.fancybox-slide--map ,
+.fancybox-slide--pdf ,
+.fancybox-slide--iframe  {
     height: 100%;
     overflow: visible;
     padding: 0;
     width: 100%;
 }
 
-.fancybox-slide--video .fancybox-content {
+.fancybox-slide--video  {
     background: #000;
 }
 
-.fancybox-slide--map .fancybox-content {
+.fancybox-slide--map {
     background: #e5e3df;
 }
 
-.fancybox-slide--iframe .fancybox-content {
+.fancybox-slide--iframe  {
     background: #fff;
 }
 
@@ -431,7 +420,7 @@ body.compensate-for-scrollbar {
     top: 0;
 }
 
-.fancybox-slide--image.fancybox-is-scaling .fancybox-content {
+.fancybox-slide--image.fancybox-is-scaling  {
     overflow: hidden;
 }
 
@@ -903,8 +892,4 @@ body.compensate-for-scrollbar {
     .fancybox-thumbs__list a {
         max-width: calc(100% - 10px);
     }
-}
-
-.fancybox-content{
-    all: unset;
 }
