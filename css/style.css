@@ -307,21 +307,3 @@ label{
   outline:0;
   border: 1px solid #97d848;
 }
-
-
-/*ADICIONES*/
-.play-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  display: block; /* Mostrar la imagen por defecto */
-  z-index: 1;
-}
-
-@media (min-width: 450px) {
-  .play-overlay{
-      display: none;
-  }
-}
