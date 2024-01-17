@@ -95,7 +95,7 @@ body{
 /*PAGINA CONTENIDO*/
 
 .body_1{
-  background-image: url(../images/Medellín-en-la-noche.png);
+  background-image: url(../images/Medellin-en-la-noche.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -103,7 +103,7 @@ body{
 }
 
 .body_2{
-  background-image: url(../images/Med01.jpg);
+  background-image: url(../images/Med01.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -111,7 +111,7 @@ body{
 }
 
 .body_3{
-  background-image: url(../images/Med02.jpg);
+  background-image: url(../images/Med02.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -119,7 +119,7 @@ body{
 }
 
 .body_4{
-  background-image: url(../images/Med03.jpg);
+  background-image: url(../images/Med03.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
