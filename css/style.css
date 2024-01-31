@@ -4,6 +4,12 @@ body{
     /*margin: 0;*/
     font-family: Arial, Helvetica, sans-serif;
 }
+.body_0{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /*PAGINA INICIO*/
 
@@ -11,7 +17,7 @@ body{
     background-image: url(../images/Med05.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100%
 }
 .art_init{
     height: 100vh;
