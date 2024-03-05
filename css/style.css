@@ -271,6 +271,7 @@ input{
 
 textarea{
   width: 100%;
+  max-width: 550px;
   height: 150px; 
   border-radius: 10px;  
   border-style: solid; 
