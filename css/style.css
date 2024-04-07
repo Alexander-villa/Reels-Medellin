@@ -338,3 +338,10 @@ label{
   width: 284px;
   object-fit: contain;
 }
+
+  /*FACEBOOK*/ 
+  .fb-comments{
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
