@@ -13,6 +13,7 @@ body{
 h1{
   text-align: center;
   color: #f0f8ff;
+  /*display: none;*/
 }
 /*PAGINA INICIO*/
 
@@ -155,6 +156,8 @@ margin-top: 100px;
 /*PAGINA CONTENIDO*/
 
 .body_1{
+  width: 80%;
+  margin: 0 auto;
   background-image: url(../images/Medellín-en-la-noche.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,6 +166,8 @@ margin-top: 100px;
 }
 
 .body_2{
+  width: 80%;
+  margin: 0 auto;
   background-image: url(../images/Med01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,6 +176,8 @@ margin-top: 100px;
 }
 
 .body_3{
+  width: 80%;
+  margin: 0 auto;
   background-image: url(../images/Med02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,13 +186,14 @@ margin-top: 100px;
 }
 
 .body_4{
+  width: 80%;
+  margin: 0 auto;
   background-image: url(../images/Med03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
 
 tbody{
   display: flex;
